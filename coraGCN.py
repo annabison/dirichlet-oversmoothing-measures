@@ -131,8 +131,8 @@ def run_experiment(use_self_loops: bool):
     
     TITLE_SIZE, LABEL_SIZE, LEGEND_SIZE = 24, 22, 20
 
-    ax.plot(unnormalized_energies, marker='o', linestyle='--', label=r'Unnormalized Energy ($E_\Delta / N$)')
-    ax.plot(normalized_energies, marker='x', linestyle='-', label=r'Normalized Energy ($E_{\Delta_{norm}} / N$)')
+    ax.plot(unnormalized_energies, marker='o', linestyle='--', label=r'Unnormalized Energy ($E_\Delta$)')
+    ax.plot(normalized_energies, marker='x', linestyle='-', label=r'Normalized Energy ($E_{\Delta_{norm}}$)')
     ax.plot(frobenius_norms, marker='s', linestyle=':', label=r'Frobenius Norm ($\|X\|_F$)', color='green')
     
     title = f"Dirichlet Energies & Norm - Cora LCC ({loops_str})"
